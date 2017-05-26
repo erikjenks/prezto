@@ -77,7 +77,7 @@ alias gdi='git status --porcelain --short --ignored | sed -n "s/^!! //p"'
 # Fetch (f)
 alias gf='git fetch'
 alias gfc='git clone'
-alias gfm='git pull'
+alias gPa='git pull --all'
 alias gfr='git pull --rebase'
 
 # Grep (g)
@@ -90,6 +90,7 @@ alias ggw='git grep --word-regexp'
 
 # Index (i)
 alias gia='git add'
+alias gA='git add .'
 alias giA='git add --patch'
 alias giu='git add --update'
 alias gid='git diff --no-ext-diff --cached'
@@ -171,6 +172,7 @@ alias gSx='git-submodule-remove'
 # Working Copy (w)
 alias gws='git status --ignore-submodules=${_git_status_ignore_submodules} --short'
 alias gwS='git status --ignore-submodules=${_git_status_ignore_submodules}'
+alias gS= 'git status'
 alias gwd='git diff --no-ext-diff'
 alias gwD='git diff --no-ext-diff --word-diff'
 alias gwr='git reset --soft'
@@ -179,3 +181,6 @@ alias gwc='git clean -n'
 alias gwC='git clean -f'
 alias gwx='git rm -r'
 alias gwX='git rm -rf'
+
+alias killDesk='defaults write com.apple.finder CreateDesktop false'
+alias reviveDesk='defaults write com.apple.finder CreateDesktop true'
